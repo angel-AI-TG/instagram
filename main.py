@@ -28,7 +28,7 @@ def download(bot, update):
     if "instagram.com" in instagram_post:
         changing_url = instagram_post.split("/")
         url_code = changing_url[4]
-        url = f"https://instagram.com/p/{url_code}?__a=1"
+        url = f"https://instagram.com/p/{url_code}?__d=1"
         try:
             global checking_video
             visit = requests.get(url).json()
